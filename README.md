@@ -1,6 +1,11 @@
 # AI Bootcamp files
 
-Files for the hands-on bootcamp on agentic engineering.
+I hosted this hands-on bootcamp on agentic engineering as a speaker. This repo has the files I used, so you can follow along or try everything again yourself.
+
+The bootcamp had two main goals:
+
+- **Understand how AI agents work:** We started with one Python API call and built up to a small agent, so you can see how context, tools, skills and guardrails work under the hood.
+- **Use agents well in real work:** We built a Kanban app with fast visual feedback, then covered security, team practices, and the shift from writing code to thinking about design and product.
 
 | Folder or file | What it is |
 | --- | --- |
