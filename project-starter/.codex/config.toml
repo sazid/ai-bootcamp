@@ -1,0 +1,3 @@
+# Files can change only in this project. Network stays off by default.
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"

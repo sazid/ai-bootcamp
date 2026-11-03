@@ -1,0 +1,64 @@
+/* Temporary styles for the /variations page. */
+
+.v-page-note { margin: 8px 0 24px; color: var(--muted); font-size: 14px; }
+.v-option-name { margin: 0; font-size: 16px; font-weight: 600; }
+.v-option-note { margin: 4px 0 12px; color: var(--muted); font-size: 14px; }
+
+/* Sunken column: page tone with a border, so white cards stand out. */
+.v-column-sunken { background: var(--bg); }
+
+/* Compact card */
+.v-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 4px 4px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.v-cards-white .v-card { background: var(--surface); }
+.v-title { font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+
+.v-move { position: relative; flex-shrink: 0; }
+.v-move-button,
+.v-menu-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  padding: 0 12px;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 150ms, background-color 150ms, color 150ms;
+}
+.v-move-button:hover:not(:disabled),
+.v-menu-item:hover:not(:disabled) { color: var(--text); border-color: var(--border); }
+.v-move-button:active:not(:disabled),
+.v-menu-item:active:not(:disabled) { background: var(--bg); }
+.v-move-button[aria-expanded='true'] { color: var(--text); border-color: var(--border); }
+.v-move-button:focus-visible,
+.v-menu-item:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.v-move-button:disabled,
+.v-menu-item:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.v-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 1;
+  min-width: 160px;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.v-menu-item { width: 100%; color: var(--text); }
